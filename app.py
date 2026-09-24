@@ -51,7 +51,8 @@ demo = gr.Interface(
     ),
     gr.Radio(
       choices=["male", "female"],
-      label="Sex"
+      label="Sex",
+      value="male"
     ),
     gr.Number(
       label="Age",
@@ -81,9 +82,14 @@ demo = gr.Interface(
   ],
   title="Titanic Survival Predictor",
   description="""
+  **This is an educational project. Its output describes patterns in a historical
+  dataset and should not be treated as a factual conclusion about an individual
+  passenger or as a model suitable for real-world decisions.**
+
   Enter passenger information and
   the machine learning model will estimate whether the passenger survived.
-  """
+  """,
+  flagging_mode="never"
 )
 
 demo.launch(
