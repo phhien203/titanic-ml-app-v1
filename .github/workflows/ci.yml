@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'main'
+    tags:
+      - 'v*'
+
+permissions: {}
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+      packages: write
+    uses: ./.github/workflows/deploy.yml
