@@ -53,6 +53,14 @@ app.py: Gradio form -> model prediction -> result in browser
 
 The preprocessing and classifier are stored together in a scikit-learn `Pipeline`. This matters because the application applies the same data preparation rules during prediction that were used during training.
 
+### Dataset source and citation
+
+The training data in [`data/titanic.csv`](data/titanic.csv) comes from the `train.csv` file published for Kaggle's [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/data) competition. It contains 891 passenger records, including the survival outcome used as the model's target.
+
+Please cite the dataset as:
+
+> Cukierski, Will. *Titanic: Machine Learning from Disaster*. Kaggle, 2012. https://www.kaggle.com/competitions/titanic
+
 ### Inputs
 
 | Input | Meaning |

@@ -5,6 +5,13 @@ import joblib
 
 model = joblib.load("model/titanic_model.pkl")
 
+PAGE_CSS = """
+.gradio-container {
+  max-width: 900px !important;
+  margin-inline: auto !important;
+}
+"""
+
 def predict_survival(
     pclass,
     sex,
@@ -88,11 +95,14 @@ demo = gr.Interface(
 
   Enter passenger information and
   the machine learning model will estimate whether the passenger survived.
+
+  ⭐ **Enjoying the project? [Star it on GitHub](https://github.com/phhien203/titanic-ml-app-v1)!**
   """,
   flagging_mode="never"
 )
 
 demo.launch(
   server_name="0.0.0.0",
-  server_port=8760
+  server_port=8760,
+  css=PAGE_CSS
 )
