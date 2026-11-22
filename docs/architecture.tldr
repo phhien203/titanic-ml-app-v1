@@ -1,0 +1,1553 @@
+{
+  "tldrawFileFormatVersion": 1,
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 26,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.user": 1,
+      "com.tldraw.asset.image": 6,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.shape.arrow": 8,
+      "com.tldraw.shape.bookmark": 4,
+      "com.tldraw.shape.draw": 5,
+      "com.tldraw.shape.embed": 4,
+      "com.tldraw.shape.frame": 1,
+      "com.tldraw.shape.geo": 14,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.highlight": 4,
+      "com.tldraw.shape.image": 7,
+      "com.tldraw.shape.line": 5,
+      "com.tldraw.shape.note": 15,
+      "com.tldraw.shape.text": 4,
+      "com.tldraw.shape.video": 6,
+      "com.tldraw.binding.arrow": 1
+    }
+  },
+  "records": [
+    {
+      "gridSize": 10,
+      "name": "Titanic app architecture",
+      "meta": {},
+      "id": "document:document",
+      "typeName": "document"
+    },
+    {
+      "meta": {},
+      "id": "page:architecture",
+      "name": "App architecture",
+      "index": "a1",
+      "typeName": "page"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:title",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "a2tjn",
+      "props": {
+        "color": "black",
+        "size": "xl",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1650,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Titanic Survival Predictor"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 65,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:subtitle",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "a3gnn",
+      "props": {
+        "color": "grey",
+        "size": "m",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1650,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Application architecture  /  Python · pandas · scikit-learn · joblib · Gradio"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": -30,
+      "y": 155,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:training-boundary",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "a4suj",
+      "props": {
+        "geo": "rectangle",
+        "dash": "dashed",
+        "url": "",
+        "w": 1730,
+        "h": 400,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "none",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 175,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:training-heading",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "a5WHI",
+      "props": {
+        "color": "blue",
+        "size": "m",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1600,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "01  OFFLINE TRAINING — train.py"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 260,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:dataset",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "a6WZE",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 300,
+        "h": 215,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Training dataset"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "data/titanic.csv"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "891 passenger records"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "7 features + Survived target"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 420,
+      "y": 260,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:split",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "a7dRv",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 300,
+        "h": 215,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "pandas + train_test_split"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Select features / target"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Stratified 80 / 20 split"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "random_state = 42"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 840,
+      "y": 240,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:fit",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "a86bA",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 390,
+        "h": 265,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Fit scikit-learn Pipeline"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Numeric: median imputation"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Age · SibSp · Parch · Fare"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Categories: mode + one-hot"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Pclass · Sex · Embarked"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Random forest: 100 trees"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1350,
+      "y": 260,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:evaluate",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "a9Ac2",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 315,
+        "h": 215,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "blue",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Held-out evaluation"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "model.score(X_test, y_test)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Print test accuracy"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Test data is not used to fit"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 310,
+      "y": 365,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:read-data",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aAjxQ",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 730,
+      "y": 365,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:fit-training",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aB3II",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "train"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1240,
+      "y": 365,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:score-test",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aC9VX",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 840,
+      "y": 610,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:artifact",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aDzpi",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 390,
+        "h": 150,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "model/titanic_model.pkl"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Fitted preprocessor + classifier"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Saved / loaded with joblib"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1035,
+      "y": 515,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:save",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aETeX",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 85
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "dump"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 620,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:artifact-note",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aFo8E",
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 710,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "MODEL HANDOFF"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Training is a separate command, not a web request."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The repository includes a trained artifact."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Preprocessing rules are reused during inference."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 390,
+      "y": 825,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:runtime-boundary",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aG5rn",
+      "props": {
+        "geo": "rectangle",
+        "dash": "dashed",
+        "url": "",
+        "w": 1310,
+        "h": 385,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "none",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 420,
+      "y": 845,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:runtime-heading",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aHBer",
+      "props": {
+        "color": "green",
+        "size": "m",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1220,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "02  ONLINE INFERENCE — app.py  /  optional Docker container"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 930,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:browser",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aIXNv",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 300,
+        "h": 210,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "User / browser"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Gradio passenger form"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "7 passenger attributes"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "http://localhost:8760"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 420,
+      "y": 930,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:handler",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aJkjj",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 300,
+        "h": 210,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Gradio callback"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "predict_survival(...)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Build one-row DataFrame"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cast Pclass to integer"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 840,
+      "y": 930,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:inference",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aKHkr",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 390,
+        "h": 210,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In-memory fitted pipeline"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Apply saved preprocessing"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "model.predict(passenger)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "model.predict_proba(passenger)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1350,
+      "y": 930,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:result",
+      "type": "geo",
+      "parentId": "page:architecture",
+      "index": "aLRMj",
+      "props": {
+        "geo": "rectangle",
+        "dash": "draw",
+        "url": "",
+        "w": 315,
+        "h": 210,
+        "growY": 0,
+        "scale": 1,
+        "flipX": false,
+        "flipY": false,
+        "labelColor": "black",
+        "color": "green",
+        "fill": "semi",
+        "size": "s",
+        "font": "sans",
+        "align": "middle",
+        "verticalAlign": "middle",
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Gradio response"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Survival prediction label"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Survival probability (%)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Displayed in browser"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 310,
+      "y": 1035,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:submit",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aMYz9",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "submit"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 730,
+      "y": 1035,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:predict",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aNv6X",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1240,
+      "y": 1035,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:respond",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aOhkr",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "grey",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 100,
+          "y": 0
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 1035,
+      "y": 770,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:load",
+      "type": "arrow",
+      "parentId": "page:architecture",
+      "index": "aPEur",
+      "props": {
+        "kind": "arc",
+        "labelColor": "black",
+        "color": "violet",
+        "fill": "none",
+        "dash": "solid",
+        "size": "s",
+        "arrowheadStart": "none",
+        "arrowheadEnd": "arrow",
+        "font": "sans",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 150
+        },
+        "bend": 0,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "load once at startup"
+                }
+              ]
+            }
+          ]
+        },
+        "labelPosition": 0.5,
+        "scale": 1,
+        "elbowMidPoint": 0.5
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 420,
+      "y": 1160,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:runtime-note",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aQo7M",
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1230,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "One Python process serves Gradio and runs inference; no separate model service or database."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 1270,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:deployment",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aRnwI",
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1665,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "DEPLOYMENT  ·  Dockerfile: python:3.12-slim → install requirements.txt → copy project → python app.py"
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 1310,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:port-note",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aSOdX",
+      "props": {
+        "color": "orange",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1665,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "CONFIG NOTE  ·  app.py binds 0.0.0.0:8760, but Dockerfile declares EXPOSE 7860. Runtime port mapping must use 8760."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    },
+    {
+      "x": 0,
+      "y": 1370,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:disclaimer",
+      "type": "text",
+      "parentId": "page:architecture",
+      "index": "aTWCn",
+      "props": {
+        "color": "grey",
+        "size": "s",
+        "font": "sans",
+        "textAlign": "start",
+        "w": 1665,
+        "richText": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Educational model only — historical patterns, not a factual conclusion about an individual passenger."
+                }
+              ]
+            }
+          ]
+        },
+        "scale": 1,
+        "autoSize": false
+      },
+      "typeName": "shape"
+    }
+  ]
+}

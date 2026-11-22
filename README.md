@@ -38,6 +38,8 @@ The project also shows an end-to-end implementation rather than a standalone not
 
 ## How it works
 
+An editable [architecture diagram](docs/architecture.tldr) shows the training pipeline, saved model, inference flow, and Docker runtime. Download the file and open it in [tldraw](https://www.tldraw.com/) using **Open file**.
+
 ```text
 data/titanic.csv
        |
