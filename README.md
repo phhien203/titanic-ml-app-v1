@@ -40,6 +40,8 @@ The project also shows an end-to-end implementation rather than a standalone not
 
 An editable [architecture diagram](docs/architecture.tldr) shows the training pipeline, saved model, inference flow, and Docker runtime. Download the file and open it in [tldraw](https://www.tldraw.com/) using **Open file**.
 
+[![Titanic app architecture: training, saved model, Gradio inference, and Docker runtime](docs/architecture.svg)](docs/architecture.tldr)
+
 ```text
 data/titanic.csv
        |

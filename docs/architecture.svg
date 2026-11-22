@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -35 1800 1475" width="1800" height="1475" role="img" aria-labelledby="title description">
+  <title id="title">Titanic Survival Predictor architecture</title>
+  <desc id="description">Offline training reads the Titanic dataset, splits data, fits and evaluates a scikit-learn pipeline, then saves it with joblib. The Gradio app loads the saved pipeline once and returns predictions and survival probabilities. The optional Docker runtime starts app.py.</desc>
+  <rect x="-60" y="-35" width="1800" height="1475" fill="white" />
+  <defs>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#18212f" />
+    </marker>
+    <marker id="arrow-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#536174" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#245cba" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#18734a" />
+    </marker>
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7448ad" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9b540b" />
+    </marker>
+  </defs>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="0" y="40" fill="#18212f" font-size="40" text-anchor="start">
+      <tspan x="0" dy="0">Titanic Survival Predictor</tspan>
+    </text>
+    <text x="0" y="88" fill="#536174" font-size="23" text-anchor="start">
+      <tspan x="0" dy="0">Application architecture  /  Python · pandas · scikit-learn · joblib · Gradio</tspan>
+    </text>
+    <rect x="-30" y="155" width="1730" height="400" rx="10" fill="none" stroke="#245cba" stroke-width="2" stroke-dasharray="9 7" />
+    <text x="0" y="198" fill="#245cba" font-size="23" text-anchor="start">
+      <tspan x="0" dy="0">01  OFFLINE TRAINING — train.py</tspan>
+    </text>
+    <rect x="0" y="260" width="300" height="215" rx="10" fill="#eff5ff" stroke="#245cba" stroke-width="2" />
+    <text x="150.0" y="318.2" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="150.0" dy="0">Training dataset</tspan>
+      <tspan x="150.0" dy="22.1">data/titanic.csv</tspan>
+      <tspan x="150.0" dy="22.1" />
+      <tspan x="150.0" dy="22.1">891 passenger records</tspan>
+      <tspan x="150.0" dy="22.1">7 features + Survived</tspan>
+      <tspan x="150.0" dy="22.1">target</tspan>
+    </text>
+    <rect x="420" y="260" width="300" height="215" rx="10" fill="#eff5ff" stroke="#245cba" stroke-width="2" />
+    <text x="570.0" y="329.25" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="570.0" dy="0">pandas + train_test_split</tspan>
+      <tspan x="570.0" dy="22.1" />
+      <tspan x="570.0" dy="22.1">Select features / target</tspan>
+      <tspan x="570.0" dy="22.1">Stratified 80 / 20 split</tspan>
+      <tspan x="570.0" dy="22.1">random_state = 42</tspan>
+    </text>
+    <rect x="840" y="240" width="390" height="265" rx="10" fill="#eff5ff" stroke="#245cba" stroke-width="2" />
+    <text x="1035.0" y="290.05" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="1035.0" dy="0">Fit scikit-learn Pipeline</tspan>
+      <tspan x="1035.0" dy="22.1" />
+      <tspan x="1035.0" dy="22.1">Numeric: median imputation</tspan>
+      <tspan x="1035.0" dy="22.1">Age · SibSp · Parch · Fare</tspan>
+      <tspan x="1035.0" dy="22.1" />
+      <tspan x="1035.0" dy="22.1">Categories: mode + one-hot</tspan>
+      <tspan x="1035.0" dy="22.1">Pclass · Sex · Embarked</tspan>
+      <tspan x="1035.0" dy="22.1" />
+      <tspan x="1035.0" dy="22.1">Random forest: 100 trees</tspan>
+    </text>
+    <rect x="1350" y="260" width="315" height="215" rx="10" fill="#eff5ff" stroke="#245cba" stroke-width="2" />
+    <text x="1507.5" y="318.2" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="1507.5" dy="0">Held-out evaluation</tspan>
+      <tspan x="1507.5" dy="22.1" />
+      <tspan x="1507.5" dy="22.1">model.score(X_test, y_test)</tspan>
+      <tspan x="1507.5" dy="22.1">Print test accuracy</tspan>
+      <tspan x="1507.5" dy="22.1" />
+      <tspan x="1507.5" dy="22.1">Test data is not used to fit</tspan>
+    </text>
+    <line x1="310" y1="365" x2="410" y2="365" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <line x1="730" y1="365" x2="830" y2="365" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <rect x="752.0" y="353.0" width="56" height="24" rx="4" fill="white" />
+    <text x="780.0" y="369.0" fill="#18212f" font-size="14" text-anchor="middle">
+      <tspan x="780.0" dy="0">train</tspan>
+    </text>
+    <line x1="1240" y1="365" x2="1340" y2="365" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <rect x="840" y="610" width="390" height="150" rx="10" fill="#f5effc" stroke="#7448ad" stroke-width="2" />
+    <text x="1035.0" y="657.8" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="1035.0" dy="0">model/titanic_model.pkl</tspan>
+      <tspan x="1035.0" dy="22.1" />
+      <tspan x="1035.0" dy="22.1">Fitted preprocessor + classifier</tspan>
+      <tspan x="1035.0" dy="22.1">Saved / loaded with joblib</tspan>
+    </text>
+    <line x1="1035" y1="515" x2="1035" y2="600" stroke="#7448ad" stroke-width="2" marker-end="url(#arrow-violet)" />
+    <rect x="1011.0" y="545.5" width="48" height="24" rx="4" fill="white" />
+    <text x="1035.0" y="561.5" fill="#18212f" font-size="14" text-anchor="middle">
+      <tspan x="1035.0" dy="0">dump</tspan>
+    </text>
+    <text x="0" y="637" fill="#536174" font-size="17" text-anchor="start">
+      <tspan x="0" dy="0">MODEL HANDOFF</tspan>
+      <tspan x="0" dy="22.1">Training is a separate command, not a web request.</tspan>
+      <tspan x="0" dy="22.1">The repository includes a trained artifact.</tspan>
+      <tspan x="0" dy="22.1">Preprocessing rules are reused during inference.</tspan>
+    </text>
+    <rect x="390" y="825" width="1310" height="385" rx="10" fill="none" stroke="#18734a" stroke-width="2" stroke-dasharray="9 7" />
+    <text x="420" y="868" fill="#18734a" font-size="23" text-anchor="start">
+      <tspan x="420" dy="0">02  ONLINE INFERENCE — app.py  /  optional Docker container</tspan>
+    </text>
+    <rect x="0" y="930" width="300" height="210" rx="10" fill="#eef9f2" stroke="#18734a" stroke-width="2" />
+    <text x="150.0" y="996.75" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="150.0" dy="0">User / browser</tspan>
+      <tspan x="150.0" dy="22.1" />
+      <tspan x="150.0" dy="22.1">Gradio passenger form</tspan>
+      <tspan x="150.0" dy="22.1">7 passenger attributes</tspan>
+      <tspan x="150.0" dy="22.1">http://localhost:8760</tspan>
+    </text>
+    <rect x="420" y="930" width="300" height="210" rx="10" fill="#eef9f2" stroke="#18734a" stroke-width="2" />
+    <text x="570.0" y="996.75" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="570.0" dy="0">Gradio callback</tspan>
+      <tspan x="570.0" dy="22.1">predict_survival(...)</tspan>
+      <tspan x="570.0" dy="22.1" />
+      <tspan x="570.0" dy="22.1">Build one-row DataFrame</tspan>
+      <tspan x="570.0" dy="22.1">Cast Pclass to integer</tspan>
+    </text>
+    <rect x="840" y="930" width="390" height="210" rx="10" fill="#eef9f2" stroke="#18734a" stroke-width="2" />
+    <text x="1035.0" y="996.75" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="1035.0" dy="0">In-memory fitted pipeline</tspan>
+      <tspan x="1035.0" dy="22.1" />
+      <tspan x="1035.0" dy="22.1">Apply saved preprocessing</tspan>
+      <tspan x="1035.0" dy="22.1">model.predict(passenger)</tspan>
+      <tspan x="1035.0" dy="22.1">model.predict_proba(passenger)</tspan>
+    </text>
+    <rect x="1350" y="930" width="315" height="210" rx="10" fill="#eef9f2" stroke="#18734a" stroke-width="2" />
+    <text x="1507.5" y="985.7" fill="#18212f" font-size="17" text-anchor="middle">
+      <tspan x="1507.5" dy="0">Gradio response</tspan>
+      <tspan x="1507.5" dy="22.1" />
+      <tspan x="1507.5" dy="22.1">Survival prediction label</tspan>
+      <tspan x="1507.5" dy="22.1">Survival probability (%)</tspan>
+      <tspan x="1507.5" dy="22.1" />
+      <tspan x="1507.5" dy="22.1">Displayed in browser</tspan>
+    </text>
+    <line x1="310" y1="1035" x2="410" y2="1035" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <rect x="328.0" y="1023.0" width="64" height="24" rx="4" fill="white" />
+    <text x="360.0" y="1039.0" fill="#18212f" font-size="14" text-anchor="middle">
+      <tspan x="360.0" dy="0">submit</tspan>
+    </text>
+    <line x1="730" y1="1035" x2="830" y2="1035" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <line x1="1240" y1="1035" x2="1340" y2="1035" stroke="#536174" stroke-width="2" marker-end="url(#arrow-grey)" />
+    <line x1="1035" y1="770" x2="1035" y2="920" stroke="#7448ad" stroke-width="2" marker-end="url(#arrow-violet)" />
+    <rect x="947.0" y="833.0" width="176" height="24" rx="4" fill="white" />
+    <text x="1035.0" y="849.0" fill="#18212f" font-size="14" text-anchor="middle">
+      <tspan x="1035.0" dy="0">load once at startup</tspan>
+    </text>
+    <text x="420" y="1177" fill="#536174" font-size="17" text-anchor="start">
+      <tspan x="420" dy="0">One Python process serves Gradio and runs inference; no separate model service or database.</tspan>
+    </text>
+    <text x="0" y="1287" fill="#536174" font-size="17" text-anchor="start">
+      <tspan x="0" dy="0">DEPLOYMENT  ·  Dockerfile: python:3.12-slim → install requirements.txt → copy project → python app.py</tspan>
+    </text>
+    <text x="0" y="1327" fill="#9b540b" font-size="17" text-anchor="start">
+      <tspan x="0" dy="0">CONFIG NOTE  ·  app.py binds 0.0.0.0:8760, but Dockerfile declares EXPOSE 7860. Runtime port mapping must use 8760.</tspan>
+    </text>
+    <text x="0" y="1387" fill="#536174" font-size="17" text-anchor="start">
+      <tspan x="0" dy="0">Educational model only — historical patterns, not a factual conclusion about an individual passenger.</tspan>
+    </text>
+  </g>
+</svg>
